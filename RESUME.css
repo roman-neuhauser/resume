@@ -1,0 +1,86 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400|Lora:400,700';
+
+body {
+  background-color: #fcfade;
+  color: black;
+  font-family: 'Lato', sans-serif;
+  margin: 4em;
+  max-width: 45em;
+}
+
+h1 {
+  margin-top: 2em;
+}
+
+body > h1 {
+  border-bottom: 1px solid black;
+}
+
+body > section.folded > p,
+body > section.folded > section {
+  display: none;
+}
+
+body > section > h1:after {
+  float: right;
+}
+
+body > section.open > h1:after {
+  content: "\23f6";
+}
+
+body > section.folded > h1:after {
+  content: "\23f7";
+}
+
+section > h1 {
+  font-size: 2em;
+  border-bottom: 1px solid black;
+}
+
+body > dl {
+  border-left: 1px solid black;
+  float: right;
+  padding: 0 0 0 1em;
+  margin: 0 0 0 1em;
+}
+
+body > dl dt {
+  display: none;
+}
+
+body > dl dd {
+  margin-left: 0px;
+}
+
+h1 a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Lora', serif;
+  color: black;
+}
+
+h2 {
+  font-size: 120%;
+}
+
+p {
+  margin-left: 2em;
+}
+
+ul {
+  margin-left: 1em;
+}
+
+blockquote {
+  font-style: italic;
+  font-size: 85%;
+}
+
+blockquote li {
+  font-style: normal;
+}
