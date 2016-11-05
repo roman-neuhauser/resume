@@ -31,10 +31,15 @@ Summary
 I have worked at...
 ===================
 
+GoodData: QA Architect
+**********************
+
+* 2016-present
+
 SUSE LINUX: Senior SW Engineer
 ******************************
 
-* 2014-present: QA Maintenance; Infrastructure and tooling for testers
+* 2014-2016: QA Maintenance; Infrastructure and tooling for testers
   (Bash, Perl, Python, QEMU/KVM, Zsh)
 * 2012-2014: https://susestudio.com backend maintenance, API development,
   virtualization
