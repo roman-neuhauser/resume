@@ -8,14 +8,11 @@ Summary
 `Email:`
   neuhauser@sigpipe.cz
 `Phone:`
-  +420 734 227 922
+  +420 771 118 125
 `Address:`
-  street
-    Žitná 1631
-  city, postal code
-    Čáslav 28601
-  country
-    Czech Republic
+  | Gen. Eliáše 1711
+  | Čáslav 28601
+  | Czech Republic
 
 
 .. compound::
@@ -31,10 +28,38 @@ Summary
 I have worked at...
 ===================
 
+Bravo Aero: Principal SW Engineer
+*********************************
+
+* 2018-2022: Migration of Avantik from VisualBasic 6 to .Net Core
+  (D, DigitalOcean, Github, VB6, VB.Net, .Net Core).
+
+..
+
+  I coauthored the modernization strategy, developed CI and QA automation,
+  and trained junior admins.  I wrote a partial VB6 parser in sed,
+  and used it to automate elimination of dead code from Avantik.
+  I wrote a couple of reporting tools in F# on Mono and Dotnet Core.
+
+  Open-source byproducts I wrote to support myself in these jobs include
+
+  * dram_, a tool to drive literate functional tests for the command line
+
+.. _dram: https://sr.ht/~rne/dram
+
 GoodData: QA Architect
 **********************
 
-* 2016-present
+* 2016-2018: Designed and implemented CI infrastructure testable in vitro
+  (Bash, Github, Jenkins, Jenkins Job Builder).
+
+..
+
+  Open-source byproducts I wrote to support myself in these jobs include
+
+  * fake_, a tool to create test doubles for commandline utilities
+
+.. _fake: https://github.com/roman-neuhauser/fake
 
 SUSE LINUX: Senior SW Engineer
 ******************************
@@ -62,7 +87,7 @@ SUSE LINUX: Senior SW Engineer
   * haveopt_, `getopts(1)`_ simile with support for long options compatible
     with multiple shells (`sh`)
   * `git-mailz`_, `git-mantle`_, `git-pimp`_, alternatives to
-    git-send-email, git-request-pull, git-format-patch, (Zsh)
+    git-send-email, git-request-pull, git-format-patch (Zsh)
 
 .. _studio-apiv3: https://github.com/roman-neuhauser/studio-apiv3
 .. _api-shotgun: https://github.com/roman-neuhauser/api-shotgun
@@ -86,10 +111,9 @@ StringData: Senior SW Engineer
 ..
 
   On Buldozer I brought database schema and change deployment
-  under automation with SCons and shrunk the overall application
-  codebase to a fraction of what it was when I joined the project,
-  while my teammates were busy adding functionality.  I introduced
-  unit tests into the development process.
+  under automation with SCons, refactored the codebase to a fraction
+  of its original size.  I introduced unit tests into the development
+  process.
 
   For Hypos I automated deployments of the full software stack
   using Python, bringing the process from full day manual effort of
@@ -101,14 +125,14 @@ StringData: Senior SW Engineer
 
   Open-source byproducts I wrote to support myself in this job include
 
-  * Amock (defunct), mock generating library for PHP (PHP)
   * Iniphile_, INI file parsing library and CLI tool (C++)
   * `Iniphile/PHP`_, PHP extension wrapping Iniphile_ (C++)
   * Logdemux_, log file demultiplexer (C++)
   * PublicSet_, partial HTTP server (C++)
   * rnt_, tool for functional testing of command line interfaces (POSIX sh)
-  * Testilence (defunct), unit testing library for PHP (PHP)
   * Zeta_, library of first-or-higher-order functions (JavaScript)
+  * Amock (defunct), mock generating library for PHP (PHP)
+  * Testilence (defunct), unit testing library for PHP (PHP)
 
 .. _Iniphile: https://github.com/roman-neuhauser/iniphile
 .. _Iniphile/PHP: https://github.com/roman-neuhauser/php-iniphile
@@ -128,7 +152,7 @@ ZOOM Int: System&Network Administrator, SW Engineer
 
   I designed the database schema for the next version of CallRec
   used in both OLTP and OLAP workloads (PostgreSQL 8.0, PL/PGSQL),
-  wrote SixPack, archival and reporting tool for CallRec (PHP),
+  wrote an archival and reporting tool for CallRec (PHP),
   and ported the `periodic(8)`_ framework from FreeBSD to RHEL
   (`sh`, unpublished work).
 
@@ -157,31 +181,32 @@ I have used...
 Operating Systems
 *****************
 
-ArchLinux; DragonflyBSD; FreeBSD; OpenBSD; RHEL; SUSE; Windows 2003
+ArchLinux; DragonflyBSD; FreeBSD; OpenBSD; RHEL; SUSE; Voidlinux; Windows 2003
 
   As a programmer, I've targeted FreeBSD, RHEL, SUSE and Windows
   Server at work.  As an admin, I've managed FreeBSD, OpenBSD, RHEL
   and SUSE machines.
 
   I used FreeBSD as my desktop from 4.3 through 6.0, openSUSE
-  from 12.1 through 13.1, ArchLinux in the last two years.
+  from 12.1 through 13.1, then ArchLinux for a few years.
+  I use Voidlinux nowadays.
 
   My home infrastructure is based on DragonflyBSD and FreeBSD.
 
 Programming Languages
 *********************
 
-Bash; C; C++; CoffeeScript; JavaScript; PHP; POSIX shell;
-Perl; Python; Ruby; Zsh; Autoconf, Bison, make
+Bash; C; C++; CoffeeScript; D; Execline; JavaScript; PHP; POSIX shell;
+Perl; Python; Ruby; Zsh
 
   I spent a good chunk of my career designing and developing enterprise
-  backoffice applications in PHP; I wrote an extension or two (in C++).
-  For the small scale, CGI does not care about the language and neither
-  do I.
+  backoffice applications in PHP; I wrote a couple of PHP extensions in C++.
+  For the small scale, CGI does not care about the language, and I tend
+  to pick Zsh.
 
-  Python is my default language when I target MS Windows, and a very
-  likely choice otherwise.  I've worked on Python codebases from trivial
-  through medium scale.
+  I've used Bash, Powershell, Python, and Zsh to automate MS Windows.
+
+  I've worked on Python codebases from trivial through medium scale.
 
   I have worked with Node.js, mostly in CoffeeScript.
 
@@ -196,7 +221,7 @@ Perl; Python; Ruby; Zsh; Autoconf, Bison, make
 Databases
 *********
 
-MySQL; MS SQL Server 2000, 2005; PostgreSQL; Oracle Database 10, 11; SQLite
+MySQL; MS SQL Server; PostgreSQL; Oracle Database 10, 11; SQLite
 
   My hands-on experience wth MySQL spanned the 3.22.x - 4.1.x range;
   I wasn't impressed with it.
@@ -228,11 +253,14 @@ My Own
 
 Various tools and libraries in different programming languages:
 
-  https://github.com/roman-neuhauser?tab=repositories
+* https://github.com/roman-neuhauser?tab=repositories
+* https://sr.ht/~rne
 
-All my software comes with functional tests based on rnt_ or Cram_,
-and documentation (man pages).  I use bs-update_ to maintain packages
-of my software for a range of GNU/Linux distros including RHEL and SLES.
+..
+
+  My software comes with functional tests based on dram_, rnt_ or Cram_,
+  and documentation (man pages).  I use bs-update_ to maintain packages
+  of my software for a range of GNU/Linux distros including RHEL and SLES.
 
 .. _Cram: https://bitheap.org/cram/
 
@@ -242,3 +270,19 @@ Contributions
 Multitude of open-source projects including Apache HTTPD, FreeBSD, FreeTDS,
 libarchive, libstatgrab, Mercurial, Node.js, OSSP, PHP, PostgreSQL, Pure,
 Subversion, Zsh...
+
+I have read...
+==============
+
+Too many programming books to list (or remember).
+
+..
+
+  I loved reading C. J. Date's books, W. Richard Stevens' TCP/IP Illustrated,
+  Design Patterns by Gamma et al, Allen Holub's Holub on Patterns,
+  Dijkstra's A Discipline of Programming, Tom DeMarco's Peopleware,
+  and Fred Brooks' Mythical Man-Month.
+
+  My *to read* bookshelf includes titles such as Functional Programming in C++,
+  Expert F# 4.0, Haskell in Depth, Type-Driven Development with Idris,
+  and Psychology of Computer Programming, among others.

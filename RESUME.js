@@ -41,7 +41,7 @@
 
   w.onload = function ()
   {
-    var headings = query(document, 'section > h1')
+    var headings = query(document, 'section > section > h1')
     each(headings, function (elem)
     {
       elem.parentElement.className = 'folded';
