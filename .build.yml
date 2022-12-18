@@ -17,4 +17,4 @@ tasks:
   - build: |
       make -C resume resume.tar.gz
   - upload: |
-      hut pages publish -d $site resume/resume.tar.gz
+      make -C resume deploy SITE=$site
