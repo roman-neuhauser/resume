@@ -1,0 +1,20 @@
+triggers:
+  - action: email
+    condition: failure
+    to: rn+sr.ht@sigpipe.cz
+
+oauth: pages.sr.ht/PAGES:RW
+environment:
+  site: rne.srht.site
+
+image: alpine/edge
+packages:
+  - hut
+  - make
+  - python3
+
+tasks:
+  - build: |
+      make -C resume resume.tar.gz
+  - upload: |
+      hut pages publish -d $site resume/resume.tar.gz

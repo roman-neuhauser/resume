@@ -1,2 +1,5 @@
+.venv
+*.gz
 *.html
 *.pdf
+*.zip

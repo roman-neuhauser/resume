@@ -1,5 +1,5 @@
 PYTHON        = python3
-RST2HTMLFLAGS = --strict --stylesheet=$(word 2, $^) --script-async=RESUME.js
+RST2HTMLFLAGS = --stylesheet=$(word 2, $^) --script-async=RESUME.js
 
 .PHONY: all html
 all html: RESUME.html
@@ -8,9 +8,14 @@ all html: RESUME.html
 clean:
 	$(RM) RESUME.html
 
-RESUME.html: RESUME.rst RESUME.css .venv/bin/rst2html5
-	./in-venv .venv rst2html5 --strict $(RST2HTMLFLAGS) $< $@
+resume.tar.gz: RESUME.html RESUME.css RESUME.js
+	tar -czf resume.tar.gz RESUME.html RESUME.css RESUME.js
 
-.venv/bin/rst2html5:
+RESUME.html: RESUME.rst RESUME.css .venv/bin/rst2html5
+	.venv/bin/rst2html5 --strict $(RST2HTMLFLAGS) $< $@
+
+.venv/bin/pip:
 	$(PYTHON) -m venv .venv
-	./in-venv .venv pip install rst2html5
+
+.venv/bin/rst2html5: .venv/bin/pip
+	.venv/bin/pip install rst2html5
