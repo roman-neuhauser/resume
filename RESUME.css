@@ -81,16 +81,21 @@ h3 {
 }
 
 p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
   margin-left: 2em;
 }
 
 ul {
+  margin-top: 0.5em;
   margin-left: 1em;
 }
 
 blockquote {
   font-style: italic;
   font-size: 85%;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 blockquote li {
