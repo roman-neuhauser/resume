@@ -21,9 +21,9 @@ pdf)
   mv $1 $3
 ;;
 resume.tar.gz)
-  s="index.html rne.html rne.css rne.js rne.pdf"
-  redo-ifchange $s
-  tar -czf $3 $s
+  redo-ifchange manifest
+  xargs < manifest redo-ifchange
+  tar -czf $3 -T manifest
 ;;
 publish|deploy)
   redo-ifchange resume.tar.gz
