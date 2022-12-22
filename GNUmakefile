@@ -14,7 +14,7 @@ deploy publish: resume.tar.gz
 	hut pages publish -d $(SITE) -s resume resume.tar.gz
 
 resume.tar.gz: index.html rne.html rne.css rne.js rne.pdf
-	tar -czf $@ --xform=s/rne.html/index.html/ $^
+	tar -czf $@ $^
 
 %.html: %.rst rne.css .venv/bin/rst2html5
 	.venv/bin/rst2html5 --strict $(RST2HTMLFLAGS) $< $@
